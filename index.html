@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="SHORTCUT ICON" href="https://pbs.twimg.com/profile_images/1626984203073257473/yC8JNIag_400x400.jpg">
+    <title>Mayank's Portfolio</title>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/a5d6673bb8.js" crossorigin="anonymous"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font: 16px/1.4 Lato, sans-serif;
+            color: #fefeff;
+            -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+            font-family: Comic Sans MS;
+        }
+        body {
+            background: #080510;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        h1 {
+            font: 2.75em Cinzel, serif;
+            font-weight: 400;
+            letter-spacing: .35em;
+            text-shadow: 0 0 25px rgba(254, 254, 255, .85);
+        }
+        h2 {
+            font: 1.45em Cinzel, serif;
+            font-weight: 400;
+            letter-spacing: .5em;
+            text-shadow: 0 0 25px rgba(254, 254, 255, .85);
+            text-transform: lowercase;
+        }
+        [class^=letter] {
+            -webkit-transition: opacity 3s ease;
+            -moz-transition: opacity 3s ease;
+            transition: opacity 3s ease;
+        }
+        h1, h2 {
+            visibility: hidden;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        h1.transition-in, h2.transition-in {
+            visibility: visible;
+        }
+        h1 [class^=letter], h2 [class^=letter] {
+            opacity: 0;
+        }
+        h1.transition-in [class^=letter], h2.transition-in [class^=letter] {
+            opacity: 1;
+        }
+        #container {
+            display: table;
+            position: absolute;
+            z-index: 20;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            cursor: none;
+        }
+        #container > div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        #container p {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 25px;
+            font-size: .8em;
+            letter-spacing: .1em;
+            font-weight: 300;
+            color: #76747a;
+            -webkit-font-smoothing: subpixel-antialiased;
+            font-smoothing: subpixel-antialiased;
+        }
+        #container p strong {
+            color: #b3abc5;
+        }
+        #container p span {
+            font-size: .75em;
+            padding: 0 2px;
+        }
+        #canvas {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: none;
+        }
+        .STYLE4 {
+            color: #FFF;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #00a0d2;
+            font-size: 30px;
+        }
+        .circular-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .circular-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <center>
+                <div class="circular-image">
+                    <img src="https://pbs.twimg.com/profile_images/1626984203073257473/yC8JNIag_400x400.jpg" alt="Circular Image">
+                </div>
+                <h1 id="h1">Mayank Sutariya</h1>
+                <br>
+                <h2 id="h2"></h2>
+                
+                <div class="social-icons">
+                    <a href="https://x.com/mayanksec" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/mayanksec/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://medium.com/@mayanksec" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                </div>
+                <br>
+                <marquee scrolldelay="1" scrollamount="6" direction="left" behavior="scroll" width="50%">
+                    <font color="#fc9003" face="Tahoma" size="4">"कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।"</font>
+                </marquee>
+            </center>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="canvas.js"></script>
+</body>
+</html>
